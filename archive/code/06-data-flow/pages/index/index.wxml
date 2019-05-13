@@ -1,0 +1,3 @@
+<text>{{foo}}</text>
+
+<input value="{{foo}}" bindinput="inputChangeHandle"/>

@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- mustache 小胡子语法 专门用于输出逻辑层暴露的数据 -->
+  <text>{{message}}</text>
+  <!-- mustache 可以作用在 元素的 内容和 属性上 -->
+  <input value="{{message}}"/>
+
+
+  <input value="{{message}}sdfsd"/>
+
+  <text>{{message + 1}}</text>
+
+  <text>{{1 + 1}}</text>
+
+  <!-- 小程序的 wxml 中 属性的值 如果只是在双引号内部 它永远是字符串 -->
+  <!-- mustache 可以用于申明有类型的值 -->
+  <checkbox checked="{{false}}"></checkbox>
+
+  <text>{{foo.addPostfix(message)}}</text>
+</view>
+
+<!-- wxs 标签 类似于 咱们在 html 中的 script 标签，可以定义一些行内脚本 -->
+<wxs module="foo">
+  // 这里可以到处一个对象，这个对象可以直接在界面上使用
+  // 这里的代码必须遵循 commonjs 规范
+  module.exports = {
+    addPostfix: function (input) {
+      return input + ' wxs'
+    }
+  }
+</wxs>

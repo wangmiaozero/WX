@@ -1,0 +1,4 @@
+<view bindtap="viewTapHandle">
+  <button id="btn" bindtap="tapHandle">Click me</button>
+  <!-- 通过 catchtap 绑定的事件不会有冒泡  -->
+</view>

@@ -1,0 +1,8 @@
+/* pages/foo/bar.wxss */
+view {
+  text-align: center;
+  margin: 20px;
+}
+text {
+  color: hotpink;
+}

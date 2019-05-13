@@ -1,0 +1,2 @@
+<navigator url="/pages/page1/page1">page1</navigator>
+<text>{{ foo }}</text>

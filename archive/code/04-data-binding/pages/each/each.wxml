@@ -1,0 +1,20 @@
+<!-- <view>
+  <view wx:for="{{students}}" wx:for-item="s" wx:for-index="i" wx:key="aaa">
+    <text>{{i}}</text>
+    <text>name: {{s.name}}</text>
+    <text>age: {{s.age}}</text>
+  </view>
+</view> -->
+
+<view>
+  <!-- wx:key 属性值 写的是 遍历的数据单项属性名称 -->
+  <!-- 可以通过 *this 这个保留值 去指定当前被遍历的元素  -->
+  <view wx:for="{{students}}" wx:key="id">
+    <checkbox/>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<text wx:for="foo">-{{item}}-</text>
+
+<button bindtap="addItemHandle">add</button>

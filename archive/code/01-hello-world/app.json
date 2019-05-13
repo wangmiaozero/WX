@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/foo/bar",
+    "pages/demo/demo",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f5f6f9",
+    "navigationBarBackgroundColor": "#2b3b49",
+    "navigationBarTitleText": "我的第一个小程序",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#c0c0c0",
+    "selectedColor": "#000",
+    "backgroundColor": "#f0f0f0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "BAR",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-actived.png"
+      },
+      {
+        "pagePath": "pages/foo/bar",
+        "text": "BAR",
+        "iconPath": "assets/board.png",
+        "selectedIconPath": "assets/board-actived.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "debug": true
+}
